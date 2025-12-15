@@ -72,4 +72,3 @@ if __name__ == '__main__':
     unittest.main()
 
 
-    # PYTHONPATH=src python -m unittest tests.test_lavadero_unittest -v 
