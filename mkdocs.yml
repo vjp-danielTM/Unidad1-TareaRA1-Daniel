@@ -3,7 +3,7 @@
 # -------------------------------------------------------------
 # CONFIGURACIÓN GENERAL DEL SITIO
 # -------------------------------------------------------------
-site_name: Documentación de Calculadora Python # Define el título que aparecerá en la barra de navegación y en la etiqueta <title> del navegador.
+site_name: UNIDAD1 TAREA 1 DANIEL TRUJILLO # Define el título que aparecerá en la barra de navegación y en la etiqueta <title> del navegador.
 
 # -------------------------------------------------------------
 # ESTRUCTURA DE NAVEGACIÓN (MENÚ)
@@ -13,6 +13,7 @@ nav:
   # El nombre de la sección en el menú: nombre_archivo.md
   - Home: /docs/index.md             # Primer elemento del menú, enlaza con el archivo 'index.md'.
   - Elementos Python: Actividad-Elementos-Programa-Python-Daniel.md
+  - Ejecucion y depuracion del codigo: Ejecucion_depuracion.md
   - Pruebas: pruebas.md
   - Sandbox: sandbox_documentacion.md
   - Conclusiones: Conclusion.md
