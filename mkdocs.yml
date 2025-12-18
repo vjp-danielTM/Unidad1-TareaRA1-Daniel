@@ -11,7 +11,6 @@ site_name: UNIDAD1 TAREA 1 DANIEL TRUJILLO # Define el título que aparecerá en
 # Define la lista de enlaces y el orden de aparición en el menú de navegación principal.
 nav:
   # El nombre de la sección en el menú: nombre_archivo.md
-  - Home: index.md             # Primer elemento del menú, enlaza con el archivo 'index.md'.
   - Elementos Python: Actividad-Elementos-Programa-Python-Daniel.md
   - Ejecucion y depuracion del codigo: Ejecucion_depuracion.md
   - Pruebas: pruebas.md

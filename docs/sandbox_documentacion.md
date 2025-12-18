@@ -1,5 +1,8 @@
 # DOCUMENTACION DE SANDBOX
 
+#### Esta es la documentacion donde esta la ejecucion de sandbox que hay que hacer en a actividad final
+
+
 ## INSTALAR FIREJAIL
 
 

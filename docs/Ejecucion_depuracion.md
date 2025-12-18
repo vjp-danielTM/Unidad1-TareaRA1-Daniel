@@ -1,5 +1,8 @@
 # EJECUCION Y DEPURACION DEL CODIGO
 
+### Esta es la documentacion donde voy a ejecutar y a depurar el codigo que hay que hacer en a actividad final
+
+
 Lo primero que  hice fue hacer un `tree` para ver  que  tenia en mi repositorio y localizar el `main_app.py`.
 
 ![Tree del repo](https://raw.githubusercontent.com/vjp-danielTM/Unidad1-TareaRA1-Daniel/refs/heads/main/docs/ejecucion_depuracion_img/1.png)
