@@ -2,6 +2,7 @@
 #### Esta es la documentacion donde estan los 14 test que hay que hacer en a actividad final
 
 Lo primero que hice fue copiar a mi codigo los test que el profesor me dio para ir empezando poco a poco:
+
 ```  
 def test1_estado_inicial_correcto(self):
         """Test 1: Verifica que el estado inicial es Inactivocon 0 ingresos."""
@@ -33,7 +34,8 @@ def test1_estado_inicial_correcto(self):
         self.assertEqual( fases_esperadas, fases_obtenidas,
                         f"Secuencia de fases incorrecta.\nEsperadas: {fases_esperadas}\nObtenidas: {fases_obtenidas}")
  
- ```
+```
+
 
 Y ahora hay que ejecutar para ver si los test tienen errores `python -m unnittest tests/test_lavadero_unnittest.py -v`.
 
@@ -135,6 +137,7 @@ Vemos que los test salen todos a ok.
 
 
 Ahora vamos con los ultimos test que son `10,11,12,13 y 14`.
+
 ```
    def test10_flujo_con_prelavado(self):
         """Test 10: Con prelavado a mano, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 6, 0."""
