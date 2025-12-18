@@ -38,7 +38,7 @@ Ahora o con `nano main_app.py` como yo hice en el ejemplo o desde visual code va
 
 ![Ejecucion y depuracion del codigo](https://raw.githubusercontent.com/vjp-danielTM/Unidad1-TareaRA1-Daniel/refs/heads/main/docs/ejecucion_depuracion_img/5.png)
 
-Y vemos ahora que todos loe ejemplos salen con los resultados que  buscabamos
+Y vemos que ahora todos los ejemplos salen con los resultados que buscabamos.
 
 ![Ejecucion Final del codigo](https://raw.githubusercontent.com/vjp-danielTM/Unidad1-TareaRA1-Daniel/refs/heads/main/docs/ejecucion_depuracion_img/6.png)
 ![Ejecucion Final del codigo](https://raw.githubusercontent.com/vjp-danielTM/Unidad1-TareaRA1-Daniel/refs/heads/main/docs/ejecucion_depuracion_img/7.png)
