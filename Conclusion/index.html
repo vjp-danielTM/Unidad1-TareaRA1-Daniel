@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Conclusiones - UNIDAD1 TAREA 1 DANIEL TRUJILLO</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">UNIDAD1 TAREA 1 DANIEL TRUJILLO</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../Actividad-Elementos-Programa-Python-Daniel/" class="nav-link">Elementos Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Ejecucion_depuracion/" class="nav-link">Ejecucion y depuracion del codigo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pruebas/" class="nav-link">Pruebas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../sandbox_documentacion/" class="nav-link">Sandbox</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Conclusiones</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../sandbox_documentacion/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="reflexion-personal-medidas-de-seguridad-en-los-lenguajes-de-programacion">Reflexión personal: Medidas de seguridad en los lenguajes de programación</h3>
+<p>La frase de Bruce Schneier que aparece al principio de la unidad me parece super acertada: </p>
+<blockquote>
+<p>El lenguaje que elijas para programar es como la cerradura de tu casa</p>
+</blockquote>
+<p>De eso depende mucho la seguridad de lo que construyas. Después de leer el material de la Unidad 1 , me ha quedado claro que no todos los lenguajes tienen el mismo nivel de protección contra errores que luego pueden convertirse en vulnerabilidades.</p>
+<p>Por ejemplo, los lenguajes de bajo nivel como C o el ensamblador dan mucho control, pero no te ayudan casi nada con la seguridad. Todo lo tienes que gestionar tú: la memoria, los punteros... Un despiste y tienes un problema, que puede ser una vulnerabilidad peligrosa.</p>
+<p>En cambio, lenguajes de alto nivel como Python o Java te quitan mucho peso de encima. Eso evita un montón de errores clásicos. Java va más allá con su máquina virtual: verifica el bytecode, tiene sandbox, controla los accesos... Es más difícil que un programa Java tenga ciertos tipos de fallos de seguridad por diseño.</p>
+<p>Luego están los lenguajes más modernos como Rust, que me parece impresionante. Lo que más llama la atención es que te obliga a manejar la memoria de forma segura desde el momento de compilar. Básicamente, elimina en tiempo de compilación errores que en C aparecerían en ejecución y podrían ser explotados. Go también ayuda bastante con su garbage collector y el detector de race conditions, aunque no llega al nivel de Rust.</p>
+<p>Al final, creo que para proyectos donde la seguridad es crítica, merece la pena elegir lenguajes que incorporen protecciones de por si. No digo que abandonemos las de bajo nivel del todo, porque a veces hace falta para ciertas cosas de bajo nivel, pero siempre con mucho cuidado. Para la mayoría de aplicaciones nuevas, yo aplicaria Rust o Java o Go o python no tengo ni idea de como se usan pero son las mas seguras de usar (De python se algo  mas pero  tampoco gran cosa).</p>
+<h3 id="tabla-comparativa-de-seguridad">Tabla comparativa de seguridad</h3>
+<table>
+<thead>
+<tr>
+<th>Lenguaje</th>
+<th>Tipo/Nivel</th>
+<th>Medidas de seguridad principales</th>
+<th>Vulnerabilidades comunes</th>
+<th>Recomendación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C</td>
+<td>Compilado/Bajo</td>
+<td>Ninguna automática (gestión manual)</td>
+<td>Buffer overflow, use-after-free</td>
+<td>Solo para componentes críticos de bajo nivel con auditorías exhaustivas</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>Interpretado/Alto</td>
+<td>Garbage collection, módulos seguros</td>
+<td>Inyecciones, errores runtime</td>
+<td>Excelente para scripting y prototipado seguro</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>Híbrido/Alto</td>
+<td>Verificación bytecode, sandbox JVM</td>
+<td>Deserialización insegura</td>
+<td>Ideal para aplicaciones enterprise</td>
+</tr>
+<tr>
+<td>Rust</td>
+<td>Compilado/Alto</td>
+<td>Ownership, borrow checker (memory safety)</td>
+<td>Muy pocas (seguro por diseño)</td>
+<td>Preferido para software crítico y seguro</td>
+</tr>
+<tr>
+<td>Go</td>
+<td>Compilado/Alto</td>
+<td>Garbage collection, race detector</td>
+<td>Errores de concurrencia menores</td>
+<td>Bueno para servicios y microservicios</td>
+</tr>
+</tbody>
+</table></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

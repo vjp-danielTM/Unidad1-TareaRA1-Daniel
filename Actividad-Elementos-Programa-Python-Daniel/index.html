@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Elementos Python - UNIDAD1 TAREA 1 DANIEL TRUJILLO</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">UNIDAD1 TAREA 1 DANIEL TRUJILLO</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Elementos Python</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Ejecucion_depuracion/" class="nav-link">Ejecucion y depuracion del codigo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../pruebas/" class="nav-link">Pruebas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../sandbox_documentacion/" class="nav-link">Sandbox</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Conclusion/" class="nav-link">Conclusiones</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Ejecucion_depuracion/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#actividad-elementos-programa-python" class="nav-link">Actividad-Elementos-Programa-Python</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="actividad-elementos-programa-python">Actividad-Elementos-Programa-Python</h1>
+<p>Voy a hacer una documentacion de el archivo lavadero.py</p>
+<pre><code>1.Cuando se crea un lavadero, éste no tiene ingresos, no está ocupado, está en fase 0 y todas las opciones de lavado (prelavado a mano, secado a mano y encerado) están puestas a false.
+
+2.Cuando se intenta comprar un lavado con encerado pero sin secado a mano, se produce una IllegalArgumentException.
+
+3.Cuando se intenta hacer un lavado mientras que otro ya está en marcha, se produce una IllegalStateException.
+
+4.Si seleccionamos un lavado con prelavado a mano, los ingresos de lavadero son 6,50€.
+
+5.Si seleccionamos un lavado con secado a mano, los ingresos son 6,00€.
+
+6.Si seleccionamos un lavado con secado a mano y encerado, los ingresos son 7,20€.
+
+7.Si seleccionamos un lavado con prelavado a mano y secado a mano, los ingresos son 7,50€.
+
+8.Si seleccionamos un lavado con prelavado a mano, secado a mano y encerado, los ingresos son 8,70€.
+
+9.Si seleccionamos un lavado sin extras y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 6, 0.
+
+10.Si seleccionamos un lavado con prelavado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 6, 0.
+
+11.Si seleccionamos un lavado con secado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 7, 0.12.
+
+12.Si seleccionamos un lavado con secado a mano y encerado y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 7, 8, 0.
+
+13.Si seleccionamos un lavado con prelavado a mano y secado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 7, 0.
+
+14.Si seleccionamos un lavado con prelavado a mano, secado a mano y encerado y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 7, 8, 0.
+</code></pre>
+<pre><code class="language-python"># lavadero.py
+</code></pre>
+<p>Este bloque crea la clase Lavadero y define números fijos para cada fase del lavado</p>
+<pre><code class="language-python">class Lavadero:
+    &quot;&quot;&quot;
+    Simula el estado y las operaciones de un túnel de lavado de coches.
+    Cumple con los requisitos de estado, avance de fase y reglas de negocio.
+    &quot;&quot;&quot;
+
+    FASE_INACTIVO = 0
+    FASE_COBRANDO = 1
+    FASE_PRELAVADO_MANO = 2
+    FASE_ECHANDO_AGUA = 3
+    FASE_ENJABONANDO = 4
+    FASE_RODILLOS = 5
+    FASE_SECADO_AUTOMATICO = 6
+    FASE_SECADO_MANO = 7
+    FASE_ENCERADO = 8
+</code></pre>
+<p>Cuando se crea un nuevo lavadero, este método pone todo a cero: sin dinero, inactivo, libre y sin extras seleccionados.</p>
+<pre><code class="language-python">def __init__(self):
+        &quot;&quot;&quot;
+        Constructor de la clase. Inicializa el lavadero.
+        Cumple con el requisito 1.
+        &quot;&quot;&quot;
+        self.__ingresos = 0.0
+        self.__fase = self.FASE_INACTIVO
+        self.__ocupado = False
+        self.__prelavado_a_mano = False
+        self.__secado_a_mano = False
+        self.__encerado = False
+        self.terminar()
+</code></pre>
+<pre><code class="language-python">Permiten leer el estado del lavadero desde fuera (por ejemplo lavadero.fase) pero nadie puede cambiarlo directamente. Es la forma segura de consultar los datos privados
+</code></pre>
+<pre><code class="language-python">    @property
+    def fase(self):
+        return self.__fase
+
+    @property
+    def ingresos(self):
+        return self.__ingresos
+
+    @property
+    def ocupado(self):
+        return self.__ocupado
+
+    @property
+    def prelavado_a_mano(self):
+        return self.__prelavado_a_mano
+
+    @property
+    def secado_a_mano(self):
+        return self.__secado_a_mano
+
+    @property
+    def encerado(self):
+        return self.__encerado
+</code></pre>
+<p>Deja el lavadero completamente limpio y libre cuando el coche ya ha terminado todo el proceso.</p>
+<pre><code class="language-python">    def terminar(self):
+        self.__fase = self.FASE_INACTIVO
+        self.__ocupado = False
+        self.__prelavado_a_mano = False
+        self.__secado_a_mano = False
+        self.__encerado = False
+</code></pre>
+<p>Aquí llega un nuevo cliente. Se comprueba que el túnel esté libre y que no pida encerado sin secado a mano. Si todo está bien, se marcan las opciones y el lavadero pasa a estar ocupado</p>
+<pre><code class="language-python">    def hacerLavado(self, prelavado_a_mano, secado_a_mano, encerado):
+        &quot;&quot;&quot;
+        Inicia un nuevo ciclo de lavado, validando reglas de negocio.
+
+        :raises RuntimeError: Si el lavadero está ocupado (Requisito 3).
+        :raises ValueError: Si se intenta encerar sin secado a mano (Requisito 2).
+        &quot;&quot;&quot;
+        if self.__ocupado:
+            raise RuntimeError(&quot;No se puede iniciar un nuevo lavado mientras el lavadero está ocupado&quot;)
+
+        if not secado_a_mano and encerado:
+            raise ValueError(&quot;No se puede encerar el coche sin secado a mano&quot;)
+
+        self.__fase = self.FASE_INACTIVO  
+        self.__ocupado = True
+        self.__prelavado_a_mano = prelavado_a_mano
+        self.__secado_a_mano = secado_a_mano
+        self.__encerado = encerado
+</code></pre>
+<p>Calcula cuánto cuesta este lavado según los extras y lo suma al dinero total del día.</p>
+<pre><code class="language-python">    def _cobrar(self):
+        &quot;&quot;&quot;
+        Calcula y añade los ingresos según las opciones seleccionadas (Requisitos 4-8).
+        Precio base: 5.00€ (Implícito, 5.00€ de base + 1.50€ de prelavado + 1.00€ de secado + 1.20€ de encerado = 8.70€)
+        &quot;&quot;&quot;
+        coste_lavado = 5.00
+
+        if self.__prelavado_a_mano:
+            coste_lavado += 1.50 
+
+        if self.__secado_a_mano:
+            coste_lavado += 1.20 
+
+        if self.__encerado:
+            coste_lavado += 1.00 
+
+        self.__ingresos += coste_lavado
+        return coste_lavado
+</code></pre>
+<p>Es el corazón del programa. Cada vez que lo llamas, el lavadero pasa al siguiente paso: cobrar → prelavado (si toca) → agua → jabón → rodillos → secado → encerado (si toca) → terminar.</p>
+<pre><code class="language-python">    def avanzarFase(self):
+
+        if not self.__ocupado:
+            return
+
+        if self.__fase == self.FASE_INACTIVO:
+            coste_cobrado = self._cobrar()
+            self.__fase = self.FASE_COBRANDO
+            print(f&quot; (COBRADO: {coste_cobrado:.2f} €) &quot;, end=&quot;&quot;)
+
+        elif self.__fase == self.FASE_COBRANDO:
+            if self.__prelavado_a_mano:
+                self.__fase = self.FASE_PRELAVADO_MANO
+            else:
+                self.__fase = self.FASE_ECHANDO_AGUA 
+
+        elif self.__fase == self.FASE_PRELAVADO_MANO:
+            self.__fase = self.FASE_ECHANDO_AGUA
+
+        elif self.__fase == self.FASE_ECHANDO_AGUA:
+            self.__fase = self.FASE_ENJABONANDO
+
+        elif self.__fase == self.FASE_ENJABONANDO:
+            self.__fase = self.FASE_RODILLOS
+
+        elif self.__fase == self.FASE_RODILLOS:
+            if self.__secado_a_mano:
+                self.__fase = self.FASE_SECADO_AUTOMATICO 
+
+            else:
+                self.__fase = self.FASE_SECADO_MANO
+
+        elif self.__fase == self.FASE_SECADO_AUTOMATICO:
+            self.terminar()
+
+        elif self.__fase == self.FASE_SECADO_MANO:
+
+            self.terminar() 
+
+        elif self.__fase == self.FASE_ENCERADO:
+            self.terminar() 
+
+        else:
+            raise RuntimeError(f&quot;Estado no válido: Fase {self.__fase}. El lavadero va a estallar...&quot;)
+
+
+</code></pre>
+<p>Convierte el número de fase en un texto bonito para que se entienda al verlo por pantalla</p>
+<pre><code class="language-python">    def imprimir_fase(self):
+        fases_map = {
+            self.FASE_INACTIVO: &quot;0 - Inactivo&quot;,
+            self.FASE_COBRANDO: &quot;1 - Cobrando&quot;,
+            self.FASE_PRELAVADO_MANO: &quot;2 - Haciendo prelavado a mano&quot;,
+            self.FASE_ECHANDO_AGUA: &quot;3 - Echándole agua&quot;,
+            self.FASE_ENJABONANDO: &quot;4 - Enjabonando&quot;,
+            self.FASE_RODILLOS: &quot;5 - Pasando rodillos&quot;,
+            self.FASE_SECADO_AUTOMATICO: &quot;6 - Haciendo secado automático&quot;,
+            self.FASE_SECADO_MANO: &quot;7 - Haciendo secado a mano&quot;,
+            self.FASE_ENCERADO: &quot;8 - Encerando a mano&quot;,
+        }
+        print(fases_map.get(self.__fase, f&quot;{self.__fase} - En estado no válido&quot;), end=&quot;&quot;)
+
+</code></pre>
+<p>Muestra absolutamente todo lo que está pasando en el lavadero en un momento dado. Ideal para ver cómo evoluciona.</p>
+<pre><code class="language-python">
+    def imprimir_estado(self):
+        print(&quot;----------------------------------------&quot;)
+        print(f&quot;Ingresos Acumulados: {self.ingresos:.2f} €&quot;)
+        print(f&quot;Ocupado: {self.ocupado}&quot;)
+        print(f&quot;Prelavado a mano: {self.prelavado_a_mano}&quot;)
+        print(f&quot;Secado a mano: {self.secado_a_mano}&quot;)
+        print(f&quot;Encerado: {self.encerado}&quot;)
+        print(&quot;Fase: &quot;, end=&quot;&quot;)
+        self.imprimir_fase()
+        print(&quot;\n----------------------------------------&quot;)
+</code></pre>
+<pre><code class="language-python">    # Esta función es útil para pruebas unitarias, no es parte del lavadero real
+
+    # nos crea un array con las fases visitadas en un ciclo completo
+
+</code></pre>
+<p>Solo se usa en pruebas automáticas. Ejecuta un lavado completo de una vez y devuelve la lista exacta de fases por las que pasó (muy útil para comprobar que todo funciona bien).</p>
+<pre><code class="language-python">    def ejecutar_y_obtener_fases(self, prelavado, secado, encerado):
+        &quot;&quot;&quot;Ejecuta un ciclo completo y devuelve la lista de fases visitadas.&quot;&quot;&quot;
+        self.lavadero.hacerLavado(prelavado, secado, encerado)
+        fases_visitadas = [self.lavadero.fase]
+
+        while self.lavadero.ocupado:
+            # Usamos un límite de pasos para evitar bucles infinitos en caso de error
+            if len(fases_visitadas) &gt; 15:
+                raise Exception(&quot;Bucle infinito detectado en la simulación de fases.&quot;)
+            self.lavadero.avanzarFase()
+            fases_visitadas.append(self.lavadero.fase)
+
+        return fases_visitadas
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
