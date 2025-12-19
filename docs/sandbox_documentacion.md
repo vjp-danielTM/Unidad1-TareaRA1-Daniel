@@ -32,7 +32,7 @@ Una vez iniciado le damos a configuracion que es la primera applicacion que sale
 
 Se nos abre una terminal que es con la que vamos a trabajar.
 
-![Firejail shell](hthttps://raw.githubusercontent.com/vjp-danielTM/Unidad1-TareaRA1-Daniel/refs/heads/main/docs/sandbox/5.5.png)
+![Firejail shell](hthttps://raw.githubusercontent.com/vjp-danielTM/Unidad1-TareaRA1-Daniel/refs/heads/main/docs/sandbox/12.png)
 
 Si abrimos otra terminal con el `--list` podemos ver los firejail que tengo activos y tambien con `--tree` sale mas extendido y con mas informacion.
 
